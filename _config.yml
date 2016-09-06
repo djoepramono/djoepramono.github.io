@@ -7,10 +7,10 @@
 
 # Site Settings
 locale                   : "en"
-title                    : "Site Title"
+title                    : "Codingbay"
 title_separator          : "-"
-name                     : "Your Name"
-description              : "An amazing website."
+name                     : "Codingbay"
+description              : "A bay for coders"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -70,17 +70,17 @@ social:
 
 # Analytics
 analytics:
-  provider               : false # false (default), "google", "google-universal", "custom"
+  provider               : "google" # false (default), "google", "google-universal", "custom"
   google:
-    tracking_id          :
+    tracking_id          : "UA-66674350-2"
 
 
 # Site Author
 author:
-  name             : "Your Name"
-  avatar           : "bio-photo.jpg"
-  bio              : "I am an amazing person."
-  location         : "Somewhere"
+  name             : "Djoe"
+  avatar           : "djoe.jpg"
+  bio              : "Can't stop learning"
+  location         : "Earth"
   email            :
   uri              :
   bitbucket        :
@@ -227,3 +227,17 @@ compress_html:
   clippings: all
   ignore:
     envs: development
+
+# Post Default
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
