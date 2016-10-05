@@ -1,0 +1,13 @@
+#main-search {
+    input {
+        font-family: $sans-serif;
+    }
+}
+
+/*
+ * Why this is outside #main-search?
+ * Because JQuery creates the DOM for the dropdown, outside #main-search
+ */
+.ui-menu .ui-menu-item {
+    font-family: $sans-serif;
+}
